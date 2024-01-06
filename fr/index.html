@@ -50,28 +50,5 @@
                     <li><a href="/fr/contact.html">Contact</a></li>
                 </ul>
     </header>
-
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">menu</button>
-    <h1>Test de menu</h1>
-    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-      <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
-      </ul>
-    </nav>
-
-    <dl>
-      <dt aria-controls="dd1" @click="dd1Open = ! dd1Open">Lorem.</dt>
-      <dd id="dd1" x-show="dd1Open" x-transition.duration.400ms>Lorem ipsum dolor sit amet.</dd>
-    </dl>
-    <dl>
-      <dt aria-controls="dd2" @click="dd2Open = ! dd2Open">Nesciunt.</dt>
-      <dd id="dd2" x-show="dd2Open" x-transition.duration.400ms>Distinctio id natus architecto esse.</dd>
-    </dl>
-    <dl>
-      <dt aria-controls="dd3" @click="dd3Open = ! dd3Open">Ea.</dt>
-      <dd id="dd3" x-show="dd3Open" x-transition.duration.400ms>Cum sint aliquid recusandae mollitia.</dd>
-    </dl>
 </body>
 </html>
