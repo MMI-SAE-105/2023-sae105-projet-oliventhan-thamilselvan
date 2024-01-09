@@ -1,0 +1,53 @@
+
+   
+[
+    {
+      "id": 1,
+      "title": "It's Literally Impossible to Be a Woman",
+      "excerpt": "Dans le vaste panorama du cinéma, il arrive parfois qu'une réplique, apparemment simple, se détache pour toucher...",
+      "link": "/fr/page_replique.html",
+      "picture": "/public/img/ImageLargeur375-2.webp",
+      "picture_desc": "It's Literally Impossible to Be a Woman"
+    },
+    {
+      "id": 2,
+      "title": "Barbie (2023)",
+      "excerpt": "Au-delà du plastique et des tenues étincelantes, le film Barbie de 2023 présente une vision audacieuse et contemporaine de la poupée la plus célèbre du monde...",
+      "link": "/fr/page_film.html",
+      "picture": "/public/img/ImageLargeur375-5.webp",
+      "picture_desc": "Barbie (2023)"
+    },
+    {
+      "id": 3,
+      "title": "La Grande Histoire du Féminisme",
+      "excerpt": "La grande histoire du féminisme offre une exploration profonde et nuancée de la quête incessante des femmes pour l'égalité...",
+      "link": "/fr/page_livre.html",
+      "picture": "/public/img/ImageLargeur375-3.webp",
+      "picture_desc": "La Grande Histoire du Féminisme"
+    },
+    {
+      "id": 4,
+      "title": "Barbie World",
+      "excerpt": "En fusionnant des talents musicaux de renommée mondiale et une icône culturelle, Barbie World par Ice Spice et Nicki Minaj n'est pas seulement une chanson...",
+      "link": "/fr/page_musique.html",
+      "picture": "/public/img/ImageLargeur375-4.webp",
+      "picture_desc": "Barbie World"
+    },
+    {
+      "id": 5,
+      "title": "Greta Gerwig : L'Étoile Montante du Cinéma",
+      "excerpt": "Des salles obscures des cinémas indépendants aux projecteurs des Oscars, Greta Gerwig s'est établie comme une force...",
+      "link": "/fr/page_realisateur.html",
+      "picture": "/public/img/ImageLargeur375.webp",
+      "picture_desc": "Greta Gerwig : L'Étoile Montante du Cinéma"
+    },
+    {
+      "id": 6,
+      "title": "Autres Projets",
+      "excerpt": "Découvrez ici les merveilleux sites conçus par mes camarades. Chacun reflète une vision unique. Explorez, admirez, et laissez-vous inspirer...",
+      "link": "/fr/autres_projets.html",
+      "picture": "/public/img/ImageLargeur375-1.webp",
+      "picture_desc": "Autres Projets"
+    }
+  
+  ]
