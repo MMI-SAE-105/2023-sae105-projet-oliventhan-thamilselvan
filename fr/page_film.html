@@ -55,33 +55,52 @@
 <!-- Fin de l'en-tête de page -->
 
 <!-- Contenu principal de la page -->
-<main class="main">
-    <section class="section"
-        x-data="{ 'cards' : async ()=> {
-            const resp = await fetch('/src/data/articleFR.json');
-            return await resp.json();
-    }}">
-        <div class="home__header container">
-            <h1 class="home__last-articles">“It's literally impossible to be a woman”</h1>
-            <p class="home__introduction">- Barbie (2023)</p>  
-            <img class="logo_main" src="/public/icon/Logo itbh 2.svg" alt="">
-            <p class="home__introduction_1">Explorez l'évolution de "Barbie" à travers le prisme du féminisme. </p>  
-            <h1 class="home__last-articles_1">LES DERNIERS ARTICLES</h1> 
+<main class="main container">
+    <section>
+        <h1 class="article__title">"Barbie" (2023): Une Réinvention Cinématographique d'une Icône Culturelle</h1>
+        <p class="article__introduction">Au-delà du plastique et des tenues étincelantes, le film "Barbie" de 2023 présente une vision audacieuse et contemporaine de la poupée la plus célèbre du monde, plongeant profondément dans les thèmes de l'identité, de la féminité et de l'autonomie.</p>
+        <p class="article__introduction-name">Par Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/ImageLargeur375.webp" alt="Barbie">
+                <figcaption class="article__img-legend">Affiche du film "Barbie" de 2023</figcaption>
+            </figure>
         </div>
-        <template x-for="card in cards" :key="card.id">
-            <article class="card">
-                <div class="card__img ">
-                    <img :src="card.picture" :alt="card.picture_desc">
-                </div>
-                <div class="card__caption">
-                    <h2 class="card__title" x-text="card.title"></h2>
-                    <p class="card__excerpt" x-text="card.excerpt"></p>
-                    <a class="card__link uppercase" :href="card.link">lire la suite</a>
-                </div>
-            </article>
-        </template>
+        <h2 class="article__subheadings">Barbie : Une Évolution Culturelle</h2>
+        <p class="article__text">
+            Barbie, initialement conçue comme un jouet destiné à divertir, s'est rapidement élevée au rang d'icône culturelle mondiale. Plus qu'une simple poupée, elle est devenue le reflet des tendances, des aspirations et des dilemmes rencontrés par plusieurs générations. Elle a oscillé entre être un miroir des normes sociétales et un précurseur des mouvements culturels.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 345.webp" alt="Barbie">
+                <figcaption class="article__img-legend">Une image cinématographique du film</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Au-delà du sourire parfait</h2>
+        <p class="article__text">
+            La nouvelle adaptation cinématographique de 2023 ne se contente pas de présenter Barbie comme une poupée idéalisée, mais la dépeint plutôt comme une figure complexe, riche en émotions et en défis. Elle navigue à travers les aléas de la vie, symbolisant ainsi les expériences, les doutes et les triomphes des femmes contemporaines.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 346.webp" alt="Barbie">
+                <figcaption class="article__img-legend">Une image de poupées Barbie de différentes époques</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Une introspection de la féminité moderne </h2>
+        <p class="article__text">
+            Le film, tout en étant divertissant, pousse le spectateur à la réflexion. Il pose des questions essentielles et universelles : Dans un monde en perpétuel changement, comment une femme peut-elle concilier les attentes extérieures avec ses désirs intérieurs ? Comment peut-elle affirmer son identité et son indépendance dans un environnement souvent contradictoire ?
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 347.webp" alt="Barbie">
+                <figcaption class="article__img-legend">Un plan des coulisses ou un concept art du film.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">L'alliance du talent pour une œuvre mémorable </h2>
+        <p class="article__text">
+            "Barbie" (2023) n'est pas simplement le fruit d'une idée, mais le résultat d'une collaboration entre des esprits créatifs brillants. Grâce à une réalisation méticuleuse, un scénario captivant et des performances d'acteurs exceptionnelles, le film parvient à capturer l'essence de son sujet tout en offrant une expérience cinématographique inoubliable.
+        </p>
     </section>
-
 </main>
 <!-- Fin du contenu principal -->
 
