@@ -5,7 +5,6 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    display: flex;
     position: fixed;
     top: 0; bottom: 0;
     left: 0; right : 0;
