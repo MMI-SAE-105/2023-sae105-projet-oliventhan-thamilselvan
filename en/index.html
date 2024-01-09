@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/index.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main">
+    <section class="section"
+        x-data="{ 'cards' : async ()=> {
+            const resp = await fetch('/src/data/articleFR.json');
+            return await resp.json();
+    }}">
+        <div class="home__header container">
+            <h1 class="home__last-articles">“It's literally impossible to be a woman”</h1>
+            <p class="home__introduction">- Barbie (2023)</p>  
+            <img class="logo_main" src="/public/icon/Logo itbh 2.svg" alt="">
+            <p class="home__introduction_1">Explorez l'évolution de "Barbie" à travers le prisme du féminisme. </p>  
+            <h1 class="home__last-articles_1">LES DERNIERS ARTICLES</h1> 
+        </div>
+        <template x-for="card in cards" :key="card.id">
+            <article class="card">
+                <div class="card__img ">
+                    <img :src="card.picture" :alt="card.picture_desc">
+                </div>
+                <div class="card__caption">
+                    <h2 class="card__title" x-text="card.title"></h2>
+                    <p class="card__excerpt" x-text="card.excerpt"></p>
+                    <a class="card__link uppercase" :href="card.link">lire la suite</a>
+                </div>
+            </article>
+        </template>
+    </section>
+
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
