@@ -27,7 +27,7 @@
         </div>
 
         <div class="header__end">
-            <a href="/en/glossary.html">
+            <a href="/en/contact.html">
                 <img class="header__logo-lang" src="/public/icon/EN.svg" alt="icone EN">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -56,58 +56,25 @@
 
 <!-- Contenu principal de la page -->
 <main class="main container">
-    <section>
-        <h1 class="article__title">Glossaire</h1>
-        <div>
-            <h3 class="glossaire__word">Féminisme : </h3>
-            <p>Mouvement social et politique qui vise à établir une égalité des sexes et à promouvoir les droits des femmes dans la société.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Suffragettes : </h3>
-            <p>Femmes militantes du début du XXe siècle qui revendiquaient le droit de vote pour les femmes.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">#MeToo : </h3>
-            <p>Mouvement contre le harcèlement sexuel et l'agression sexuelle, popularisé en 2017.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Time's Up : </h3>
-            <p>Mouvement lancé par des professionnelles de l'industrie du divertissement en réponse au mouvement #MeToo et aux allégations d'abus à Hollywood.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Réplique : </h3>
-            <p>Phrase ou dialogue prononcé par un personnage dans une œuvre cinématographique ou théâtrale.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Icône Culturelle : </h3>
-            <p>Symbole ou figure largement reconnue ou respectée dans une culture ou une sous-culture en raison de son importance ou de sa signification.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Narrative : </h3>
-            <p>Structure cohérente et organisée d'événements et de déclarations, souvent utilisée pour raconter une histoire ou décrire un événement.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Authenticité : </h3>
-            <p>Qualité de quelque chose qui est réel, véritable ou original sans prétention ou artifice.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Sociétal : </h3>
-            <p>Relatif à la structure, à l'organisation ou au fonctionnement de la société.
-            </p>
-        </div>
-        <div>
-            <h3 class="glossaire__word">Féminité : </h3>
-            <p>Ensemble des caractéristiques ou qualités traditionnellement associées aux femmes, telles que la douceur, la sensibilité et la tendresse.</p>
-        </div>
-    </section>
+  <section>
+      <h1 class="article__title">Contact</h1>
+      <p class="article__introduction">Si vous désirez plus d'informations n'hésiter pas à me contacter !</p>
+    <form action="#">
+      <div >
+        <label for="name" class="contact__form-label">Nom</label>
+        <input type="text" name="name" id="name" class="contact__form-input" placeholder="Entrer votre nom">
+      </div>
+      <div>
+        <label for="email" class="contact__form-label">Email</label>
+        <input type="email" name="email" id="email" class="contact__form-input" placeholder="Entrer votre e-mail">
+      </div>
+      <div>
+        <label for="message" class="contact__form-label">Message</label>
+        <textarea id="message" name="message" rows="8" class="contact__form-input" placeholder="Entrer votre message"></textarea>
+      </div>
+      <button class="contact__form-button uppercase" type="submit">Envoyer</button>
+    </form>
+  </section>
 </main>
 <!-- Fin du contenu principal -->
 
