@@ -43,11 +43,11 @@
     },
     {
       "id": 6,
-      "title": "Autres Projets",
-      "excerpt": "Découvrez ici les merveilleux sites conçus par mes camarades. Chacun reflète une vision unique. Explorez, admirez, et laissez-vous inspirer...",
-      "link": "/fr/autres_projets.html",
+      "title": "Other projects",
+      "excerpt": "Here you can discover the wonderful websites designed by my fellow students. Each one reflects a unique vision. Explore, admire and be inspired...",
+      "link": "/en/other_projets.html",
       "picture": "/public/img/ImageLargeur375-1.webp",
-      "picture_desc": "Autres Projets"
+      "picture_desc": "Other projects"
     }
   
   ]
