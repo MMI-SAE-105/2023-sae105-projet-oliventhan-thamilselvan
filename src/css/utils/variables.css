@@ -1,0 +1,41 @@
+:root {
+/* Color styles */
+--dark--rose--text: rgba(49, 0, 15, 1);
+--dark--rose--footer: rgba(41, 3, 21, 1);
+--rose: rgba(192, 2, 116, 1);
+--light--rose--card: rgba(255, 239, 255, 1);
+--light--rose--backround: rgba(255, 243, 248, 1);
+--white--text: rgba(255, 255, 255, 1);
+--grey--text: rgba(195, 195, 192, 1);
+
+/* Text-size styles */
+--nom-site-22p: 22px;
+--nom-site-20p: 20px;
+--heading-1: 24px;
+--heading--2: 16px;
+--heading-3: 12px;
+--body-card: 11px;
+--b-u-t-t-o-n: 12px;
+--card-title: 16px;
+--text: 16px;
+--small--text: 13px;
+--body-articles: 18px;
+
+  /* Polices de caractère */
+  --font-mono: 'Space Mono', monospace;
+  --font-sans-serif: 'Poppins', sans-serif;
+  --font-logo: 'Permanent Marker';
+  --font-serif: 'EB Garamond', 'serif';
+
+
+  /* Font variantes */
+  --letter-spacing: 0.05em;
+
+  /* Espaces */
+  --space1x: 8px;
+  --space2x: 16px;
+  --space3x: 24px;
+  --space4x: 48px;
+  --space5x: 80px;
+  --space6x: 150px;
+}
