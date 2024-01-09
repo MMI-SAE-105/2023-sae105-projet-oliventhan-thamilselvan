@@ -27,6 +27,20 @@ Soyez attentifs à l'ordre d'import :
 /* Règles de composition */
 @import "/src/css/layout/footer.css";
 @import "/src/css/layout/header.css";
+@import "/src/css/layout/section.css";
+@import "/src/css/layout/article.css";
 
 /* Composants */
 @import "/src/css/components/menu.css";
+@import "/src/css/components/card.css";
+@import "/src/css/components/card-projects.css";
+@import "/src/css/components/carrousel.css";
+
+/* Pages */
+@import "/src/css/pages/contact.css";
+@import "/src/css/pages/glossary.css";
+@import "/src/css/pages/home.css";
+@import "/src/css/pages/about-us.css";
+@import "/src/css/pages/others-projects.css";
+@import "/src/css/pages/music.css";
+@import "/src/css/pages/book.css";
