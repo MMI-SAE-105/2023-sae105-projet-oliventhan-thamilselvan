@@ -1,6 +1,12 @@
 .home__introduction{
     font-size: var(--text);
     font-style: italic;
+    text-align: right;
+}
+
+.home__introduction_1{
+    font-size: var(--text);
+    text-align: center;
 }
 
 .home__last-articles{
@@ -8,6 +14,17 @@
     font-weight: 500;
     letter-spacing: -0.05rem;
     font-family: var(--font-sans-serif);
+    margin-top: 45px;
+    text-align: center;
+}
+
+.home__last-articles_1{
+    font-size: var(--heading-1);
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    font-family: var(--font-sans-serif);
+    margin-top: 83px;
+    padding-bottom: 20px;    
 }
 
 .home__header{
