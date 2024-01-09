@@ -1,0 +1,5 @@
+.glossaire__word{
+    font-weight: bold;
+    font-size: var(--heading-2);
+    margin-bottom: -1.2rem;
+}
