@@ -1,0 +1,6 @@
+.article__title {
+    font-size: var(--heading-1);
+    font-family: var(--font-sans-serif);
+    font-weight: normal;
+    color: var(--dark--blue--text);
+  }
