@@ -28,18 +28,18 @@
     {
       "id": 4,
       "title": "Barbie World",
-      "excerpt": "En fusionnant des talents musicaux de renommée mondiale et une icône culturelle, Barbie World par Ice Spice et Nicki Minaj n'est pas seulement une chanson...",
-      "link": "/fr/page_musique.html",
+      "excerpt": "By fusing world-renowned musical talent with a cultural icon, Barbie World by Ice Spice and Nicki Minaj is not just a song...",
+      "link": "/en/page_music.html",
       "picture": "/public/img/ImageLargeur375-4.webp",
       "picture_desc": "Barbie World"
     },
     {
       "id": 5,
-      "title": "Greta Gerwig : L'Étoile Montante du Cinéma",
-      "excerpt": "Des salles obscures des cinémas indépendants aux projecteurs des Oscars, Greta Gerwig s'est établie comme une force...",
-      "link": "/fr/page_realisateur.html",
+      "title": "Greta Gerwig: Cinema's Rising Star",
+      "excerpt": "From the darkened halls of independent cinemas to the spotlights of the Oscars, Greta Gerwig has established herself as a force to be reckoned with...",
+      "link": "/en/page_director.html",
       "picture": "/public/img/ImageLargeur375.webp",
-      "picture_desc": "Greta Gerwig : L'Étoile Montante du Cinéma"
+      "picture_desc": "Greta Gerwig: Cinema's Rising Star"
     },
     {
       "id": 6,
