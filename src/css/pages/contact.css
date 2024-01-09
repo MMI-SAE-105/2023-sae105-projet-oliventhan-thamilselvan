@@ -1,0 +1,22 @@
+.contact__form-button {
+    padding: 1.2rem;
+    margin-top: 2rem;
+    font-size: var(--b-u-t-t-o-n);
+    margin-left: 73%;
+    color: var(--white--text);
+    display: block;
+    background-color: var(--rose);
+    border-radius: 10px;
+    border: 4px double var(--white--text);
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact__form-label{
+    display: block;
+}
+
+.contact__form-input{
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
