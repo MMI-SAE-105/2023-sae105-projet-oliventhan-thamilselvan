@@ -1,0 +1,11 @@
+.a-propos__avatar-presentation{
+    text-align: center;
+    }
+    
+    .a-propos__avatar   {
+        width : 200px;
+        height : 200px;
+        display: flex;
+        margin: auto;
+    }
+    
