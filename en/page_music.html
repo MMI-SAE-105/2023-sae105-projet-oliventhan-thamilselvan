@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/page_musique.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"Barbie (2023): A Cinematic Reinvention of a Cultural Icon</h1>
+        <p class="article__introduction">Beyond the plastic and sparkling outfits, the 2023 "Barbie" film presents a bold and contemporary take on the world's most famous doll, delving deeply into themes of identity, femininity and autonomy.</p>
+        <p class="article__introduction-name">By Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/ImageLargeur375.webp" alt="Barbie">
+                <figcaption class="article__img-legend">Poster for the 2023 film "Barbie</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Barbie: A Cultural Evolution</h2>
+        <p class="article__text">
+            Barbie, initially conceived as a toy for entertainment, quickly rose to become a global cultural icon. More than just a doll, she became a reflection of the trends, aspirations and dilemmas faced by several generations. She has oscillated between being a mirror of societal norms and a precursor of cultural movements.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 345.webp" alt="Barbie">
+                <figcaption class="article__img-legend">A cinematographic image of the film</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Beyond the perfect smile</h2>
+        <p class="article__text">
+            The new film adaptation of 2023 does not simply present Barbie as an idealised doll, but rather depicts her as a complex figure, rich in emotions and challenges. She navigates through the ups and downs of life, symbolising the experiences, doubts and triumphs of contemporary women.        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 346.webp" alt="Barbie">
+                <figcaption class="article__img-legend">An image of Barbie dolls from different eras</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">An introspection of modern femininity</h2>
+        <p class="article__text">
+            The film is entertaining, but also thought-provoking. It asks essential and universal questions: in a world of perpetual change, how can a woman reconcile external expectations with her inner desires? How can she assert her identity and independence in an often contradictory environment?        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/film/Image Largeur 347.webp" alt="Barbie">
+                <figcaption class="article__img-legend">A behind-the-scenes shot or concept art from the film.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">A combination of talent for a memorable work</h2>
+        <p class="article__text">
+            "Barbie" (2023) is not simply the fruit of an idea, but the result of a collaboration between brilliant creative minds. Thanks to meticulous direction, a captivating script and outstanding acting performances, the film manages to capture the essence of its subject while offering an unforgettable cinematic experience.        </p>
+        
+        <h2 class="article__subheadings">Film gallery</h2>
+
+        <div x-data="{}">
+            <div class="carrousel_parent-ecrans">
+        
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/carrousel/ImageCarousel-4.webp" alt="Affiche">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Lady Bird (2017)</h3>
+                            <p class="carrousel-card__description">Directed by Greta Gerwig, "Lady Bird" is a semi-autobiographical film about a teenage girl.</p>    
+                        </div>
+                    </figure>
+                </div>
+        
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/carrousel/ImageCarousel.webp" alt="Affiche">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Frances Ha (2012)</h3>
+                            <p class="carrousel-card__description">Co-written by Greta Gerwig and Noah Baumbach, and starring Gerwig in the title role, "Frances Ha".</p>    
+                        </div>
+                    </figure>
+                </div>
+        
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img  class="carrousel-card__img-retouch" src="/public/img/carrousel/ImageCarousel-3.webp" alt="Affiche">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Mistress America (2015)</h3>
+                            <p class="carrousel-card__description">Also co-written by Gerwig and Baumbach, "Mistress America" is a comedy about a lonely student, Tracy.</p>    
+                        </div>
+                    </figure>
+                </div>
+
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/carrousel/ImageCarousel-2.webp" alt="Affiche">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Little Women (2019)</h3>
+                            <p class="carrousel-card__description">Directed by Greta Gerwig, "Little Women" is a modern adaptation of Louisa May Alcott's classic novel.</p>    
+                        </div>
+                    </figure>
+                </div>
+
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/carrousel/ImageCarousel-1.webp" alt="Affiche">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Barbie (2023)</h3>
+                            <p class="carrousel-card__description">Barbie, who lives in Barbie Land, is expelled from the country for being far from a perfect-looking doll.</p>    
+                        </div>
+                    </figure>
+                </div>
+            </div>
+          </div>
+
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/en/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
