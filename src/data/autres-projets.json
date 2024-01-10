@@ -53,7 +53,7 @@
         "id": 7,
         "title": "Unclouded by hate",
         "name": "Imrane Qerchi",
-        "link": "https://master--quiet-daifuku-f99cbd.netlify.app/fr/",
+        "link": "uncloudedbyhate.imrane-qerchi.fr",
         "picture": "/public/img/autre-projets/image_imrane.webp",
         "picture_desc": "Unclouded by hate"
       },
@@ -77,7 +77,7 @@
         "id": 10,
         "title": "Oppenheimer",
         "name": "Tony Moretti",
-        "link": "",
+        "link": "https://oppenheimer.tonymoretti.fr/",
         "picture": "/public/img/autre-projets/image_tony.webp",
         "picture_desc": "Oppenheimer"
       },
@@ -93,7 +93,7 @@
         "id": 12,
         "title": "Why so serious ?",
         "name": "Logan Martinez",
-        "link": "http://soserious.logan-martinez.fr",
+        "link": "https://soserious.logan-martinez.fr/",
         "picture": "/public/img/autre-projets/image_logan.webp",
         "picture_desc": "Why so serious ?"
       }
