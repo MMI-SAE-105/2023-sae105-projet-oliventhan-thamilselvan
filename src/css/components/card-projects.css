@@ -1,0 +1,57 @@
+.card-projects {
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .card-projects__img {
+    top: 0;
+    left: 0;
+    right: 0;
+    height:auto;
+    z-index: -1;
+    width: 400px;
+    max-height: 250px;
+    max-width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+  }
+  .card-projects__img-retouch{
+    border-radius: 5px;
+  }
+
+  .card-projects__caption{
+    padding: 0 auto 0 auto;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px; /* largeur obligatoire pour être centré */
+    z-index: 1;
+    border-radius: 10px;
+    background-color: var(--light--rose--card);
+    border: 0.1rem solid var(--dark--rose--text);
+  }
+  
+  .card-projects__title {
+    text-align: center;
+  }
+  
+  .card-projects__title-link {
+    color: var(--dark--rose--text);
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: var(--card-title);
+  }
+
+  .card-projects__name{
+    text-align: center;
+    color: var(--dark--rose--text);
+    font-family: var(--font-sans-serif);
+    font-weight: 500;
+    font-size: var(--card-title);
+  }
+
+
+  
