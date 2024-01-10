@@ -1,0 +1,101 @@
+
+
+[
+    {
+      "id": 1,
+      "title": "Abyssal Wave",
+      "name": "Samuel Charasse",
+      "link": "https://abyssal-wave.scharasse.fr/",
+      "picture": "/public/img/autre-projets/image_samuel.webp",
+      "picture_desc": "Abyssal Wave"
+    },
+    {
+      "id": 2,
+      "title": "The long line",
+      "name": "Angelo Bosetti",
+      "link": "",
+      "picture": "/public/img/autre-projets/image_angelo.webp",
+      "picture_desc": "The long line"
+    },
+    {
+        "id": 3,
+        "title": "Ton avenir est entre tes mains",
+        "name": "Liloue Guyot",
+        "link": "",
+        "picture": "/public/img/autre-projets/image_liloue.webp",
+        "picture_desc": "Ton avenir est entre tes mains"
+      },
+      {
+        "id": 4,
+        "title": "Le Mordor Gandalf, c'est à gauche ou à droite ?",
+        "name": "Jérémy Roy",
+        "link": "https://mordors-direction.j-roy.fr/",
+        "picture": "/public/img/autre-projets/image_jeremy.webp",
+        "picture_desc": "Le Mordor Gandalf, c'est à gauche ou à droite ?"
+      },
+      {
+        "id": 5,
+        "title": "Across the spider-web",
+        "name": "Rayane Damage",
+        "link": "https://across-the-spider-web.rdamage.fr",
+        "picture": "/public/img/autre-projets/image_rayane.webp",
+        "picture_desc": "Across the spider-web"
+      },
+      {
+        "id": 6,
+        "title": "My name is Bond, James Bond",
+        "name": "Mathis Liegeon",
+        "link": "https://allaboutskyfall.mathisliegeon.fr",
+        "picture": "/public/img/autre-projets/image_mathis.webp",
+        "picture_desc": "My name is Bond, James Bond"
+      },
+      {
+        "id": 7,
+        "title": "Unclouded by hate",
+        "name": "Imrane Qerchi",
+        "link": "https://master--quiet-daifuku-f99cbd.netlify.app/fr/",
+        "picture": "/public/img/autre-projets/image_imrane.webp",
+        "picture_desc": "Unclouded by hate"
+      },
+      {
+        "id": 8,
+        "title": "Hakuna Matata",
+        "name": "Tasnim Kebaili",
+        "link": "",
+        "picture": "/public/img/autre-projets/image_tasnim.webp",
+        "picture_desc": "Hakuna Matata"
+      }
+      {
+        "id": 9,
+        "title": "OppenMind",
+        "name": "Kalan Yilmaz",
+        "link": "https://oppenmind.kalan-yilmaz.fr",
+        "picture": "/public/img/autre-projets/image_kalan.webp",
+        "picture_desc": "OppenMind"
+      }
+      {
+        "id": 10,
+        "title": "Oppenheimer",
+        "name": "Tony Moretti",
+        "link": "",
+        "picture": "/public/img/autre-projets/image_tony.webp",
+        "picture_desc": "Oppenheimer"
+      }
+      {
+        "id": 11,
+        "title": "Le Pianiste",
+        "name": "Pierre Gachod",
+        "link": "https://lepianiste.pierre-gachod.fr/",
+        "picture": "/public/img/autre-projets/image_pierre.webp",
+        "picture_desc": "Le Pianiste"
+      }
+      {
+        "id": 12,
+        "title": "Why so serious ?",
+        "name": "Logan Martinez",
+        "link": "http://soserious.logan-martinez.fr",
+        "picture": "/public/img/autre-projets/image_logan.webp",
+        "picture_desc": "Why so serious ?"
+      }
+  
+  ]
