@@ -54,77 +54,30 @@
     </header>
 <!-- Fin de l'en-tête de page -->
 
-    <main>
-        <h1>Autres projets</h1>
-        <section>
-            <article>
-                <img src="" alt="Abyssal Wave">
-                <h2>Abyssal Wave</h2>
-                <h3>Samuel Charasse</h3>
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section class="section"
+    x-data="{ 'cards' : async ()=> {
+    const resp = await fetch('/src/data/autres-projets.json');
+    return await resp.json();
+    }}">
+        <div class="others-projects__header">
+            <h1 class="article__title">Autres projets</h1>
+        </div>
+        <template x-for="card in cards" :key="card.id">
+            <article class="card-projects">
+                <div class="card-projects__img">
+                    <img class="card-projects__img-retouch" :src="card.picture" :alt="card.picture_desc">
+                </div>
+                <div class="card-projects__caption">
+                    <h2 class="card-projects__title"><a x-text="card.title" class="card-projects__title-link" :href="card.link"></a></h2>
+                    <h3 class="card-projects__name" x-text="card.name"></h3>
+                </div>
             </article>
-            <article>
-                <img src="" alt="The long line">
-                <h2>The long line</h2>
-                <h3>Angelo Bosetti</h3>
-            </article>
-            <article>
-                <img src="" alt="Ton avenir est entre tes mains">
-                <h2>Ton avenir est entre tes mains</h2>
-                <h3>Liloue Guyot</h3>
-            </article>
-            <article>
-                <img src="" alt="Le Mordor Gandalf, c'est à gauche ou à droite ?">
-                <h2>Le Mordor Gandalf, c'est à gauche ou à droite ?</h2>
-                <h3>Jérémy Roy</h3>
-            </article>
-            <article>
-                <img src="" alt="Across the spider-web">
-                <h2>Across the spider-web</h2>
-                <h3>Rayane Damage</h3>
-            </article>
-            <article>
-                <img src="" alt="My name is Bond, James Bond">
-                <h2>My name is Bond, James Bond</h2>
-                <h3>Mathis Liegeon</h3>
-            </article>
-            <article>
-                <img src="" alt="Unclouded by hate">
-                <h2>Unclouded by hate</h2>
-                <h3>Imrane Qerchi</h3>
-            </article>
-            <article>
-                <img src="" alt="Hakuna Matata">
-                <h2>Hakuna Matata</h2>
-                <h3>Tasnim Kebaili</h3>
-            </article>
-            <article>
-                <img src="" alt="Kill This Rabbit">
-                <h2>Kill This Rabbit</h2>
-                <h3>Marion Pautrat</h3>
-            </article>
-            <article>
-                <img src="" alt="OppenMind">
-                <h2>OppenMind</h2>
-                <h3>Kalan Yilmaz</h3>
-            </article>
-            <article>
-                <img src="" alt="Oppenheimer">
-                <h2>Oppenheimer</h2>
-                <h3>Tony Moretti</h3>
-            </article>
-            <article>
-                <img src="" alt="Le Pianiste">
-                <h2>Le Pianiste</h2>
-                <h3>Pierre Gachod</h3>
-            </article>
-            <article>
-                <img src="" alt="Le Pianiste">
-                <h2>Le Pianiste</h2>
-                <h3>Logan Martinez</h3>
-            </article>
-        </section>
-    </main>
-
+        </template>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
     <footer class="footer">
         <a class="footer__lien_title" href="/fr/index.html">
             <h3 class="footer__title">Impossible To Be Her</h3>
