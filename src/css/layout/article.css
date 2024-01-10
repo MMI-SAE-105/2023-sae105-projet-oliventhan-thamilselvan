@@ -8,6 +8,7 @@
   font-family: var(--font-sans-serif);
   font-size: var(--small--text);
   font-weight: 400;
+  padding-bottom: 30px;
 }
 
 .article__subheadings{
@@ -32,6 +33,7 @@
   font-family: var(--font-sans-serif);
   font-weight: normal;
   color: var(--dark--rose--text);
+  padding-top: 30px;
 }
 
 .article__img-legend{
