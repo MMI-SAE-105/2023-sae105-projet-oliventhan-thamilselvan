@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/en/page_film.html">
+                <img class="header__logo-lang" src="/public/icon/EN.svg" alt="icone EN">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_replique.html">Réplique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_film.html">Film</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_livre.html">Livre</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_musique.html">Musique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_realisateur.html">Réalisateur</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/a_propos.html">À propos</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"Barbie World" par Ice Spice et Nicki Minaj: Quand la Musique Réinvente une Icône</h1>
+        <p class="article__introduction">En fusionnant des talents musicaux de renommée mondiale et une icône culturelle, "Barbie World" par Ice Spice et Nicki Minaj n'est pas seulement une chanson, mais un phénomène musical qui redéfinit les standards de la pop contemporaine.</p>
+        <p class="article__introduction-name">Par Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/music/ImageLargeur375.webp" alt="music">
+                <figcaption class="article__img-legend">La pochette officielle de l'album Barbie World</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Une alliance musicale inédite</h2>
+        <p class="article__text">
+            Quand deux titans de l'industrie musicale se rencontrent, le résultat ne peut être que spectaculaire. Ice Spice, avec son sens aigu de la mélodie et son penchant pour les refrains entêtants, s'allie à la verve et à l'audace de Nicki Minaj, connue pour ses rimes percutantes et son flow inimitable. Ensemble, elles infusent à "Barbie World" une énergie vibrante, un rythme effréné et une signature sonore qui capte l'attention dès la première note.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/music/Image Largeur 345.webp" alt="music">
+                <figcaption class="article__img-legend">Un extrait du clip vidéo</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Une réflexion profonde sur la féminité</h2>
+        <p class="article__text">
+            Bien loin d'être une simple chanson sur une poupée, "Barbie World" plonge dans les méandres de la féminité, de l'individualité et de l'émancipation. Les paroles, tout en étant accrocheuses, invitent à une introspection, offrant une perspective moderne et audacieuse sur les défis, les triomphes et les dilemmes auxquels sont confrontées les femmes d'aujourd'hui.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/music/Image Largeur 346.webp" alt="music">
+                <figcaption class="article__img-legend">Une image d'Ice Spice et de Nicki Minaj se produisant ensemble.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Une fresque visuelle éblouissante</h2>
+        <p class="article__text">
+            Complétant parfaitement l'aura sonore de la chanson, le clip vidéo de "Barbie World" est un véritable festin pour les yeux. Chaque plan regorge de couleurs, de textures et d'imaginations, créant un monde onirique où les frontières entre la réalité et le fantastique s'estompent. Les tenues audacieuses, les décors somptueux et les chorégraphies synchronisées contribuent à une expérience visuelle envoûtante.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/music/Image Largeur 347.webp" alt="music">
+                <figcaption class="article__img-legend">Un extrait du clip vidéo.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Au cœur du discours culturel contemporain</h2>
+        <p class="article__text">
+            "Barbie World" n'est pas qu'une simple chanson pop. Elle s'érige comme un hymne, un cri de ralliement, capturant l'essence de la culture contemporaine. Sa fusion de genres - pop, hip-hop, électro - tout en étant un triomphe commercial, a également suscité des discussions animées sur des sujets tels que la représentation féminine, les normes sociétales et le rôle toujours évolutif de la musique comme outil d'expression.
+        </p>
+
+        <h2 class="article__subheadings">Écouter sur Spotify</h2>
+
+
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/fr/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/fr/glossaire.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/fr/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/fr/à_propos.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
