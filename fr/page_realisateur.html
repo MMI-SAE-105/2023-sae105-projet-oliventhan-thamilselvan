@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisateur</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/en/page_director.html">
+                <img class="header__logo-lang" src="/public/icon/EN.svg" alt="icone EN">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_replique.html">Réplique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_film.html">Film</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_livre.html">Livre</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_musique.html">Musique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_realisateur.html">Réalisateur</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/a_propos.html">À propos</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">Greta Gerwig: L'Étoile Montante du Cinéma Indépendant Américain</h1>
+        <p class="article__introduction">Des salles obscures des cinémas indépendants aux projecteurs des Oscars, Greta Gerwig s'est établie comme une force incontournable dans le paysage cinématographique actuel, offrant des perspectives nuancées et rafraîchissantes à chaque tournant.</p>
+        <p class="article__introduction-name">Par Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/director/ImageLargeur375.webp" alt="director">
+                <figcaption class="article__img-legend">Un portrait spontanée de Greta Gerwig</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">De l'actrice à la voix singulière derrière la caméra</h2>
+        <p class="article__text">
+            Faisant ses premiers pas comme actrice, Greta Gerwig s'est immergée dans le monde fascinant du cinéma indépendant, où chaque rôle était une opportunité d'apprentissage et de croissance. Sa transition vers la réalisation n'était pas seulement un changement de rôle, mais une évolution naturelle. Armée d'une vision artistique claire et d'une sensibilité à fleur de peau, elle a su tisser des narrations intimes et poignantes qui touchent l'âme des spectateurs.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/director/Image Largeur 345.webp" alt="director">
+                <figcaption class="article__img-legend">Une photo de l'un des films de Greta Gerwig </figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Une authenticité qui résonne profondément</h2>
+        <p class="article__text">
+            Il est rare de rencontrer un réalisateur dont chaque film résonne avec une authenticité si profonde et sincère. Que ce soit à travers les méandres et les complexités des relations familiales dépeintes dans "Lady Bird", ou l'exploration audacieuse des ambitions, des rêves, et des aspirations dans "Little Women", Greta Gerwig démontre une capacité exceptionnelle à capturer l'essence même de la condition humaine.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/director/Image Largeur 346.webp" alt="director">
+                <figcaption class="article__img-legend">Une photo des coulisses de la réalisation par Greta</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Briser les moules avec audace et vision</h2>
+        <p class="article__text">
+            Avec sa reprise audacieuse de "Barbie" en 2023, Greta Gerwig n'a pas simplement réalisé un film; elle a initié une conversation. En revisitant et en redéfinissant une icône culturelle, elle a insufflé une profondeur, une dimension, et une complexité inattendues à un personnage souvent réduit à sa superficialité. Pour Gerwig, Barbie transcende son statut de simple poupée pour devenir un symbole puissant, reflétant l'évolution du féminisme et les défis de l'identité moderne.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/director/Image Largeur 347.webp" alt="director">
+                <figcaption class="article__img-legend">Une image de Greta lors d'une cérémonie de remise de prix</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Puisant dans le riche héritage du passé pour éclairer le présent </h2>
+        <p class="article__text">
+            L'œuvre de Gerwig, tout en étant résolument moderne, porte les échos des grands maîtres du cinéma, ainsi que les influences variées de la littérature, de la musique, et des arts visuels. En fusionnant ces éléments, elle réussit à créer des œuvres cinématographiques qui, tout en étant ancrées dans le présent, rendent un hommage vibrant et respectueux aux génies du passé.
+        </p>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/fr/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/fr/glossaire.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/fr/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/fr/à_propos.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
