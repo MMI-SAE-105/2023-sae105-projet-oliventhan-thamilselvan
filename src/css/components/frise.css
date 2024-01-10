@@ -4,6 +4,7 @@
     border-left: 7px solid var(--dark--rose--footer);
     position: relative;
     margin-left: 5%;
+    margin-top: 50px;
   }
   .fleche_frise {
     width: 32px;
