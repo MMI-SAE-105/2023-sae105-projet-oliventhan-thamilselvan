@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/a_propos.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">About</h1>
+
+        <p class="article__text">
+            Welcome to Impossible To Be Her, a space dedicated to celebrating and exploring the many facets of feminism through the prism of film and popular culture.
+        </p>
+
+        <h2 class="article__subheadings">Site creator</h2>
+
+        <div>
+            <img class="a-propos__avatar" src="/public/img/_redirects.svg" alt="avatar oliventhan thamilselvan">
+            <p class="a-propos_avatar-presentation">Oliventhan Thamilselvan</p>
+            <p class="a-propos__avatar-presentation">MMi 1st year - Group B2</p>
+        </div>
+
+        <p class="article__text">
+            Founded in 2023, our site is inspired by the line "It's literally impossible to be a woman", reflecting the challenges and triumphs that women face every day. We firmly believe that film, music and literature have the power not only to entertain, but also to raise awareness, educate and inspire change.
+        </p>
+
+        <div>
+            <p>Here is a micro-trottoir carried out as part of our studies to show you the range of skills covered in this course.</p>
+            <video poster="/public/img/video/en.png" class="article__video" src="https://thamilselvan.fr/video/SAE104_EN_Imrane_Qerchi_Tasnim_Kebaili_Oliventhan_Thamilselvan.mp4" controls></video>
+        </div>
+
+        <p class="article__text">
+            This project was carried out as part of an educational exercise at the MMI department in Montbéliard.
+        </p>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
