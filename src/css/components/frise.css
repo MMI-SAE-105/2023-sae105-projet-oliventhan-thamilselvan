@@ -1,14 +1,14 @@
 .frise {
     width: 200px;
     justify-content: center;
-    border-left: 7px solid black;
+    border-left: 7px solid var(--dark--rose--footer);
     position: relative;
     margin-left: 5%;
   }
   .fleche_frise {
     width: 32px;
     height: 20px;
-    background-color: black;
+    background-color: var(--dark--rose--footer);
     clip-path: polygon(100% 0, 0 0, 50% 100%);
     position: absolute;
     bottom: -20px;
@@ -19,7 +19,7 @@
     display: block;
     height: 5px;
     width: 70px;
-    background-color: black;
+    background-color: var(--dark--rose--footer);
     position: absolute;
     left: 0;
     top: 50%;
