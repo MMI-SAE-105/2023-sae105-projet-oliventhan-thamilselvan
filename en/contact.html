@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autres projets</title>
+    <title>Contact</title>
 <!-- Déclaration de la feuille de style -->
 <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
@@ -27,7 +27,7 @@
         </div>
 
         <div class="header__end">
-            <a href="/fr/a_propos.html">
+            <a href="/fr/contact.html">
                 <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -56,34 +56,25 @@
 
 <!-- Contenu principal de la page -->
 <main class="main container">
-    <section>
-        <h1 class="article__title">About</h1>
-
-        <p class="article__text">
-            Welcome to Impossible To Be Her, a space dedicated to celebrating and exploring the many facets of feminism through the prism of film and popular culture.
-        </p>
-
-        <h2 class="article__subheadings">Site creator</h2>
-
-        <div>
-            <img class="a-propos__avatar" src="/public/img/_redirects.svg" alt="avatar oliventhan thamilselvan">
-            <p class="a-propos_avatar-presentation">Oliventhan Thamilselvan</p>
-            <p class="a-propos__avatar-presentation">MMi 1st year - Group B2</p>
-        </div>
-
-        <p class="article__text">
-            Founded in 2023, our site is inspired by the line "It's literally impossible to be a woman", reflecting the challenges and triumphs that women face every day. We firmly believe that film, music and literature have the power not only to entertain, but also to raise awareness, educate and inspire change.
-        </p>
-
-        <div>
-            <p>Here is a micro-trottoir carried out as part of our studies to show you the range of skills covered in this course.</p>
-            <video poster="/public/img/video/en.png" class="article__video" src="https://thamilselvan.fr/video/SAE104_EN_Imrane_Qerchi_Tasnim_Kebaili_Oliventhan_Thamilselvan.mp4" controls></video>
-        </div>
-
-        <p class="article__text">
-            This project was carried out as part of an educational exercise at the MMI department in Montbéliard.
-        </p>
-    </section>
+  <section>
+      <h1 class="article__title">Contact</h1>
+      <p class="article__introduction">If you would like more information, please don't hesitate to contact me!</p>
+    <form action="#">
+      <div >
+        <label for="name" class="contact__form-label">Name</label>
+        <input type="text" name="name" id="name" class="contact__form-input" placeholder="Enter your name">
+      </div>
+      <div>
+        <label for="email" class="contact__form-label">Email</label>
+        <input type="email" name="email" id="email" class="contact__form-input" placeholder="Enter your e-mail address">
+      </div>
+      <div>
+        <label for="message" class="contact__form-label">Message</label>
+        <textarea id="message" name="message" rows="8" class="contact__form-input" placeholder="Enter your message"></textarea>
+      </div>
+      <button class="contact__form-button uppercase" type="submit">Send</button>
+    </form>
+  </section>
 </main>
 <!-- Fin du contenu principal -->
 
