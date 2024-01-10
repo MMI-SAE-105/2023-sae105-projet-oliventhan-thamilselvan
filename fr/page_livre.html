@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/en/page_film.html">
+                <img class="header__logo-lang" src="/public/icon/EN.svg" alt="icone EN">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_replique.html">Réplique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_film.html">Film</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_livre.html">Livre</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_musique.html">Musique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_realisateur.html">Réalisateur</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/a_propos.html">À propos</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"La Grande Histoire du Féminisme": Un Voyage à Travers les Âges de la Lutte des Femmes</h1>
+        <p class="article__introduction">Des premières suffragettes aux mouvements contemporains #MeToo et Time's Up, "La grande histoire du féminisme" offre une exploration profonde et nuancée de la quête incessante des femmes pour l'égalité et la reconnaissance.</p>
+        <p class="article__introduction-name">Par Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/ImageLargeur375.webp" alt="livre">
+                <figcaption class="article__img-legend">La couverture du livre</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Le féminisme : Une histoire de résilience et de révolution</h2>
+        <p class="article__text">
+            Bien que le féminisme soit souvent perçu comme un phénomène moderne, ses racines s'étendent profondément dans l'histoire. Ce livre, avec une rigueur académique et une narration captivante, trace le parcours tumultueux du féminisme, depuis ses premiers balbutiements dans les salons clandestins jusqu'à son affirmation en tant que puissant pilier de la transformation sociopolitique mondiale.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 345.webp" alt="livre">
+                <figcaption class="article__img-legend">Un portrait de l'auteur.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Portraits de femmes : Les bâtisseuses d'un mouvement</h2>
+        <p class="article__text">
+            "La grande histoire du féminisme" n'est pas seulement un récit d'événements, mais aussi un hommage vibrant aux femmes extraordinaires qui ont porté la torche du mouvement. Il dépeint avec admiration les vies de ces pionnières qui, à travers les âges, ont défié les normes, brisé les chaînes et tracé la voie pour les générations futures.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 346.webp" alt="livre">
+                <figcaption class="article__img-legend">Images historiques ou peintures représentant des moments clés du féminisme.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Le prisme du féminisme : Miroir et moteur de la société</h2>
+        <p class="article__text">
+            En parcourant ce livre, le lecteur est invité à réfléchir sur la dualité du féminisme en tant que reflet des réalités culturelles et en tant qu'acteur majeur du changement. Comment le féminisme s'est-il façonné face aux vents changeants de la société, et comment a-t-il, à son tour, modelé les normes, les valeurs et les aspirations des peuples à travers les époques ?
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 347.webp" alt="livre">
+                <figcaption class="article__img-legend">Le féminisme de la première vague : Briser les barrières des normes sociales</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Défis actuels : Le féminisme à l'intersection de l'ère numérique </h2>
+        <p class="article__text">
+            Tout en célébrant les victoires du passé, le livre ne se voile pas la face face aux défis contemporains. Il éclaire les nouvelles frontières du combat féministe, des débats sur l'égalité salariale à la représentativité dans l'ère numérique, et met en lumière les nuances et complexités du féminisme du 21e siècle.
+        </p>
+        
+        <h2 class="article__subheadings">Les livres sur le féminisme dans le temps</h2>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/fr/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/fr/glossaire.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/fr/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/fr/à_propos.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
