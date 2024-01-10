@@ -64,7 +64,7 @@
         "link": "",
         "picture": "/public/img/autre-projets/image_tasnim.webp",
         "picture_desc": "Hakuna Matata"
-      }
+      },
       {
         "id": 9,
         "title": "OppenMind",
@@ -72,7 +72,7 @@
         "link": "https://oppenmind.kalan-yilmaz.fr",
         "picture": "/public/img/autre-projets/image_kalan.webp",
         "picture_desc": "OppenMind"
-      }
+      },
       {
         "id": 10,
         "title": "Oppenheimer",
@@ -80,7 +80,7 @@
         "link": "",
         "picture": "/public/img/autre-projets/image_tony.webp",
         "picture_desc": "Oppenheimer"
-      }
+      },
       {
         "id": 11,
         "title": "Le Pianiste",
@@ -88,7 +88,7 @@
         "link": "https://lepianiste.pierre-gachod.fr/",
         "picture": "/public/img/autre-projets/image_pierre.webp",
         "picture_desc": "Le Pianiste"
-      }
+      },
       {
         "id": 12,
         "title": "Why so serious ?",
