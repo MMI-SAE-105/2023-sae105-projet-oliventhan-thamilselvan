@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/fr/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/en/page_music.html">
+                <img class="header__logo-lang" src="/public/icon/EN.svg" alt="icone EN">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_replique.html">Réplique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_film.html">Film</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_livre.html">Livre</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_musique.html">Musique</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/page_realisateur.html">Réalisateur</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/fr/a_propos.html">À propos</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"It's Literally Impossible to Be a Woman": L'écho puissant d'une réplique.</h1>
+        <p class="article__introduction">Dans le vaste panorama du cinéma, il arrive parfois qu'une réplique se détache pour toucher profondément la sensibilité, devenant ainsi bien plus qu'une simple ligne de dialogue : elle devient le reflet d'une réalité vécue par des millions.</p>
+        <p class="article__introduction-name">Par Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/ImageLargeur375.webp" alt="line">
+                <figcaption class="article__img-legend">Une représentation artistique ou une illustration de la phrase.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">La capacité unique du cinéma à toucher l'âme</h2>
+        <p class="article__text">
+            Le cinéma, dans son essence même, a toujours eu le pouvoir d'évoquer et de susciter des émotions. C'est un art qui, par le biais d'images et de mots, peut faire écho à des sentiments universels. Et c'est précisément ce qui se produit lorsque cette réplique retentit à l'écran, créant une onde de choc qui touche chacun, indépendamment de son vécu.
+        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 345.webp" alt="line">
+                <figcaption class="article__img-legend">Image d'une femme qui réfléchit ou qui est plongée dans ses pensées.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Un voyage à travers le temps et l'espace</h2>
+        <p class="article__text">
+            Si la réplique semble contemporaine dans son phrasé, sa portée est intemporelle et universelle. Elle résonne à travers les âges, rappelant les défis, les espoirs et les victoires des femmes de toutes les époques et de tous les horizons. Elle évoque une histoire collective, une lutte qui transcende les frontières et les générations.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 346.webp" alt="line">
+                <figcaption class="article__img-legend">Un collage de femmes de différentes cultures</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Comment une simple ligne de film se transforme en véritable phénomène socioculturel </h2>
+        <p class="article__text">
+            Il est exceptionnel de constater comment une réplique, née dans le contexte confiné d'une scène de film, peut s'épanouir et prendre une dimension telle qu'elle inspire et alimente des conversations bien au-delà des salles de cinéma. Cette phrase, dans toute sa simplicité, est devenue le porte-étendard d'une prise de conscience collective.
+        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 347.webp" alt="line">
+                <figcaption class="article__img-legend">Une photo du film d'où est tirée la réplique</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">La réplique comme catalyseur d'un changement imminent</h2>
+        <p class="article__text">
+            La puissance de cette phrase ne se limite pas à sa résonance émotionnelle. Elle a le potentiel d'agir comme un catalyseur, incitant à la réflexion, au débat et à l'action. Avec son impact grandissant, elle pourrait bien être l'étincelle qui allume la flamme d'un mouvement global, œuvrant pour un avenir où l'égalité n'est pas seulement un idéal, mais une réalité tangible et quotidienne.
+        </p>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/fr/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/fr/glossaire.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/fr/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/fr/à_propos.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
