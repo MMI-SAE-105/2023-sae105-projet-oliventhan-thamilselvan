@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/page_livre.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"La Grande Histoire du Féminisme": A Journey through the Ages of Women's Struggle</h1>
+        <p class="article__introduction">From the first suffragettes to the contemporary #MeToo and Time's Up movements, "The Great History of Feminism" offers an in-depth and nuanced exploration of women's relentless quest for equality and recognition.</p>
+        <p class="article__introduction-name">By Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/ImageLargeur375.webp" alt="livre">
+                <figcaption class="article__img-legend">The cover of the book</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Feminism: A history of resilience and revolution</h2>
+        <p class="article__text">
+            Although feminism is often seen as a modern phenomenon, its roots run deep in history. With academic rigour and captivating narrative, this book traces the tumultuous journey of feminism from its earliest beginnings in underground salons to its assertion as a powerful pillar of global socio-political transformation.        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 345.webp" alt="livre">
+                <figcaption class="article__img-legend">A portrait of the author.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Portraits of women: Builders of a movement</h2>
+        <p class="article__text">
+            "The Great History of Feminism is not just an account of events, but also a vibrant tribute to the extraordinary women who have carried the torch of the movement. It portrays with admiration the lives of these pioneers who, through the ages, have challenged norms, broken chains and paved the way for future generations.        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 346.webp" alt="livre">
+                <figcaption class="article__img-legend">Historical images or paintings representing key moments in feminism.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Feminism: the mirror and driving force of society</h2>
+        <p class="article__text">
+            In reading this book, readers are invited to reflect on the duality of feminism as a reflection of cultural realities and as a major agent of change. How has feminism shaped itself in the face of the changing winds of society, and how has it, in turn, shaped the norms, values and aspirations of people throughout the ages?        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/livre/Image Largeur 347.webp" alt="livre">
+                <figcaption class="article__img-legend">First-wave feminism: Breaking down the barriers of social norms</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Current challenges : Feminism at the crossroads of the digital age</h2>
+        <p class="article__text">
+            While celebrating the victories of the past, the book does not shy away from contemporary challenges. It sheds light on the new frontiers of the feminist struggle, from equal pay debates to representation in the digital age, and highlights the nuances and complexities of 21st-century feminism.        </p>
+        
+        <h2 class="article__subheadings">Books on feminism over the years</h2>
+
+        <div class="frise">
+            <div class="img_frise">
+              <div class="date_frise">1949</div>
+              <img  src="/public/img/frise/frise1.webp" alt="livre">
+              <a class="article__img-legend">"The Second Sex" by Simone de Beauvoir</a>
+            </div>
+            <div class="img_frise">
+              <div class="date_frise">1963</div>
+              <img  src="/public/img/frise/frise2.webp" alt="livre">
+              <a class="article__img-legend">"The Feminine Mystique" by Betty Friedan</a>
+            </div>
+            <div class="img_frise">
+              <div class="date_frise">2014</div>
+              <img  src="/public/img/frise/frise3.webp" alt="livre">
+              <a class="article__img-legend">"Bad Feminist" by Roxane Gay</a>
+              </div>
+            <div class="img_frise">
+              <div class="date_frise">2014</div>
+              <img  src="/public/img/frise/frise5.webp" alt="livre">
+              <a class="article__img-legend">"We Should All Be Feminists" by Chimamanda Ngozi Adichie</a>
+            </div>
+             <div class="img_frise">
+                <div class="date_frise">2022</div>
+                <img  src="/public/img/frise/frise4.webp" alt="livre">
+                <a class="article__img-legend">“La grande histoire du féminisme” by Maud Navarre</a>
+            </div>
+        
+            <div class="fleche_frise"></div>
+         </div>
+
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/en/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>

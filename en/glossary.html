@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/glossaire.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">Glossary</h1>
+        <div>
+            <h3 class="glossaire__word">Feminism : </h3>
+            <p>Social and political movement that aims to establish gender equality and promote women's rights in society.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Suffragettes : </h3>
+            <p>Women activists from the early 20th century who campaigned for women's right to vote.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">#MeToo : </h3>
+            <p>Movement against sexual harassment and sexual assault, popularised in 2017.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Time's Up : </h3>
+            <p>Movement launched by entertainment industry professionals in response to the #MeToo movement and allegations of abuse in Hollywood.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Line : </h3>
+            <p>A sentence or dialogue spoken by a character in a film or play.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Cultural Icon : </h3>
+            <p>A symbol or figure that is widely recognised or respected in a culture or sub-culture because of its importance or significance.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Narrative : </h3>
+            <p>A coherent, organised structure of events and statements, often used to tell a story or describe an event.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Authenticity : </h3>
+            <p>The quality of something that is real, true or original without pretence or artifice.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Societal : </h3>
+            <p>Relating to the structure, organisation or operation of the company.
+            </p>
+        </div>
+        <div>
+            <h3 class="glossaire__word">Femininity : </h3>
+            <p>A set of characteristics or qualities traditionally associated with women, such as gentleness, sensitivity and tenderness.</p>
+        </div>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/en/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
