@@ -1,0 +1,59 @@
+.frise {
+    width: 200px;
+    justify-content: center;
+    border-left: 7px solid black;
+    position: relative;
+    margin-left: 5%;
+  }
+  .fleche_frise {
+    width: 32px;
+    height: 20px;
+    background-color: black;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    position: absolute;
+    bottom: -20px;
+    left: -19.5px;
+  }
+  .img_frise::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 70px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-2.5px);
+  }
+  .date_frise {
+    display: block;
+    height: 1.5rem;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(calc(-2.5px - 1.5rem));
+    padding-left: 2px;
+  }
+  .date_friseen {
+    display: block;
+    height: 1.5rem;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(calc(-2.5px - 1.5rem));
+    padding-left: 2px;
+  }
+  .img_frise {
+    display: block;
+    width: 200px;
+    justify-content: center;
+    padding: 2rem 0;
+    padding-left: 70px;
+    position: relative;
+  }
+  .img_frise img {
+    display: block;
+    width: 200px;
+  }

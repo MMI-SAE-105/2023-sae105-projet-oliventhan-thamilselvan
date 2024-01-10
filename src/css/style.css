@@ -36,6 +36,7 @@ Soyez attentifs à l'ordre d'import :
 @import "/src/css/components/card.css";
 @import "/src/css/components/card-projects.css";
 @import "/src/css/components/carrousel.css";
+@import "/src/css/components/frise.css";
 
 /* Pages */
 @import "/src/css/pages/contact.css";
