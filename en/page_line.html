@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line</title>
+<!-- Déclaration de la feuille de style -->
+<link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+
+<body>   
+<!-- En-tête de la page -->
+    <header class="header container">
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <img class="header__logo_1" src="/public/icon/Logo itbh.svg" alt="icone EN">
+            </a>  
+        </div>
+        <div>
+            <a class="header__lien_logo" href="/en/index.html">
+                <h3 class="header__logo">Impossible To Be Her</h3>
+            </a>   
+        </div>
+
+        <div class="header__end">
+            <a href="/fr/page_replique.html">
+                <img class="header__logo-lang" src="/public/icon/FR.svg" alt="icone FR">
+            </a>
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+            </button>
+        <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_line.html">Line</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_movie.html">Movie</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_book.html">Book</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_music.html">Music</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/page_director.html">Director</a></li>
+                    <li class="menu__item_primary"><a class="menu__link" href="/en/other_projets.html">Other projects</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item_secondary"><a class="menu__link" href="/en/about.html">About</a></li>
+                    <li class="menu__item_secondary capitalize"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- Fin du menu principal -->
+        </div>      
+    </header>
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+<main class="main container">
+    <section>
+        <h1 class="article__title">"It's Literally Impossible to Be a Woman": The powerful echo of a line</h1>
+        <p class="article__introduction">In the vast panorama of cinema, it sometimes happens that a line stands out to touch the senses deeply, becoming much more than a simple line of dialogue: it becomes the reflection of a reality experienced by millions.</p>
+        <p class="article__introduction-name">By Oliventhan Thamilselvan</p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/ImageLargeur375.webp" alt="line">
+                <figcaption class="article__img-legend">An artistic representation or illustration of the sentence.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">Cinema's unique ability to touch the soul</h2>
+        <p class="article__text">
+            Cinema, in its very essence, has always had the power to evoke and arouse emotions. It is an art that, through images and words, can echo universal feelings. And that's precisely what happens when this line hits the screen, creating a shockwave that touches everyone, whatever their experience.        </p>
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 345.webp" alt="line">
+                <figcaption class="article__img-legend">Image of a woman who is thinking or engrossed in her thoughts.</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">A journey through time and space</h2>
+        <p class="article__text">
+            The line may sound contemporary in its phrasing, but its scope is timeless and universal. It resonates through the ages, recalling the challenges, hopes and victories of women from all eras and all walks of life. It evokes a collective history, a struggle that transcends borders and generations.        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 346.webp" alt="line">
+                <figcaption class="article__img-legend">A collage of women from different cultures</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">How a simple line in a film turns into a real socio-cultural phenomenon</h2>
+        <p class="article__text">
+            It is exceptional to see how a line, born in the confined context of a film scene, can blossom and take on such a dimension that it inspires and fuels conversations far beyond the cinema. This phrase, in all its simplicity, has become the standard-bearer of a collective awareness.        </p>        
+        <div>
+            <figure class="article__img">
+                <img src="/public/img/line/Image Largeur 347.webp" alt="line">
+                <figcaption class="article__img-legend">A photo of the film from which the line is taken</figcaption>
+            </figure>
+        </div>
+        <h2 class="article__subheadings">The replica as a catalyst for imminent change</h2>
+        <p class="article__text">
+            The power of this phrase is not limited to its emotional resonance. It has the potential to act as a catalyst, prompting reflection, debate and action. As its impact grows, it could well be the spark that ignites the flame of a global movement, working towards a future where equality is not just an ideal, but a tangible, everyday reality.        </p>
+    </section>
+</main>
+<!-- Fin du contenu principal -->
+
+<!-- Pied de page --> 
+    <footer class="footer">
+        <a class="footer__lien_title" href="/en/index.html">
+            <h3 class="footer__title">Impossible To Be Her</h3>
+        </a> 
+    
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a class="footer__menu-item" href="/en/glossary.html">glossaire</a></li>
+                <li><a class="footer__menu-item" href="/en/contact.html">contact</a></li>
+                <li><a class="footer__menu-item" href="/en/about.html">à propos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__description">
+            <p>Oliventhan Thamilselvan B2</p>
+            <a class="footer__link" href="mailto:tsoliventhan@gmail.com">tsoliventhan@gmail.com</a>
+            <p>Project carried out as part of an educational exercise in the<a class="footer__link" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        </div>
+        
+        <img class="footer__logo" src="/public/icon/MMI_logo.svg" alt="Logo MMi">
+    </footer>
+</body>
+</html>
